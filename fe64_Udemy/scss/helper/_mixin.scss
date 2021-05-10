@@ -1,0 +1,32 @@
+@mixin form-input{
+    form{
+        flex-grow: 5;
+        background: #73606014;
+        border: none;
+        &:focus-within{
+            background: white;
+        }
+        input{
+            border: none;
+            background: transparent !important;
+            border: 1px solid #8a92a3;
+            border-right: none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        i{
+            padding: 11px;
+            color: red; 
+            transition: all 0.5s;
+            &:hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+            &:focus{
+                background-color: none;
+            }
+        }
+    }
+}

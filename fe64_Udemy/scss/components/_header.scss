@@ -1,0 +1,32 @@
+header{
+    .header__left{
+        align-items: center;
+        .navbar-brand{
+            flex-grow: 1;
+            .logo{
+                width: 100px;
+            }
+        }
+        .categories{
+            flex-grow: 1;
+        }
+    @include form-input;
+    }
+
+    .header__right{
+        font-size: 14px;
+        li{
+            margin-right: 30px;
+        }
+        a{
+            color: #505763 !important;
+        }
+        .btn__login{
+            border: 1px solid black;
+        }
+        .btn__signup{
+            color: white !important;
+        }
+    }
+}
+

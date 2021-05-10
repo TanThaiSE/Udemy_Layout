@@ -1,0 +1,26 @@
+.carousel{
+    background-image: url('./../../img/cover.jpg');
+    height: 510px;
+    background-repeat: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display: flex;
+    align-items: center;    
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 18px;
+    }
+    @include form-input;
+    form{
+        background: white;
+    }
+}
+// Phần work
+.work{
+    background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+}
