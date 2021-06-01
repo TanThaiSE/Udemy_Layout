@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color:white;
+    color:$colorWhite;
     display: flex;
     align-items: center;    
     h1{
@@ -17,10 +17,6 @@
     }
     @include form-input;
     form{
-        background: white;
+        background: $colorWhite;
     }
-}
-// Phần work
-.work{
-    background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
 }

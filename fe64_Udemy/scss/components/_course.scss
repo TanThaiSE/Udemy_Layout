@@ -1,0 +1,26 @@
+.course{
+    .course__line1{
+        .slidecoursecategory{
+            @include slide;
+        }
+        .slidecategory{
+            @include buttonSlide;
+        }
+
+
+    }
+
+    .course__line2{
+        .title{
+            font-size: $fontSizeContent;
+        }
+
+        .slide__course{
+            @include slide;
+        }
+        .slides{
+            @include buttonSlide;
+        }
+
+    }
+}

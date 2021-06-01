@@ -161,4 +161,85 @@ header .header__right .btn__signup {
 .work {
   background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
 }
+
+.work #iconWork {
+  color: white;
+  font-size: 49px;
+  margin-top: 10px;
+}
+
+.work #work__content {
+  color: white;
+  font-size: 18px;
+}
+
+.course .course__line1 .slidecoursecategory .card-title__content {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.course .course__line1 .slidecoursecategory h3 {
+  font-size: 10px;
+}
+
+.course .course__line1 .slidecoursecategory .rating {
+  font-size: 10px;
+}
+
+.course .course__line1 .slidecoursecategory .card-text__content {
+  text-align: right;
+}
+
+.course .course__line1 .slidecoursecategory .card-text__content #priceold {
+  text-decoration: line-through;
+}
+
+.course .course__line1 .slidecoursecategory .card-text__content #pricenew {
+  font-weight: bold;
+}
+
+.course .course__line1 .slidecategory button {
+  background-color: blue !important;
+}
+
+.course .course__line1 .slidecategory .slick-dots {
+  display: none !important;
+}
+
+.course .course__line2 .title {
+  font-size: 18px;
+}
+
+.course .course__line2 .slide__course .card-title__content {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.course .course__line2 .slide__course h3 {
+  font-size: 10px;
+}
+
+.course .course__line2 .slide__course .rating {
+  font-size: 10px;
+}
+
+.course .course__line2 .slide__course .card-text__content {
+  text-align: right;
+}
+
+.course .course__line2 .slide__course .card-text__content #priceold {
+  text-decoration: line-through;
+}
+
+.course .course__line2 .slide__course .card-text__content #pricenew {
+  font-weight: bold;
+}
+
+.course .course__line2 .slides button {
+  background-color: blue !important;
+}
+
+.course .course__line2 .slides .slick-dots {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */

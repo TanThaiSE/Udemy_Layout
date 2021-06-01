@@ -30,3 +30,36 @@
         }
     }
 }
+
+@mixin slide {
+    .card-title__content{
+        font-size: $fonsizeCardSlide;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: $fonsizeCardSlide;
+    }
+
+    .rating{
+        font-size: $fonsizeCardSlide;
+    }   
+    .card-text__content{
+        text-align: right;
+        #priceold{
+            text-decoration: line-through;
+        }
+        #pricenew{
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin buttonSlide {
+    button{
+        background-color: $colorBlue !important;
+    }
+    .slick-dots{
+        display: none !important;
+    }
+}

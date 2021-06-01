@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Slick -->
+    <link rel="stylesheet" href="./lib/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -99,33 +102,1060 @@
         </div>
       </div>
 
-      <!--Work -->
+      <!--Work Xong -->
       <div class="work">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4">
-              <div class="row">
 
-                <div class="col-md-6">
-                  <i class="fa fa-address-book" aria-hidden="true"></i>
+            <div class="col-md-4">
+              <div class="row mt-3">
+
+                <div class="col-md-2">
+                  <i class="fa fa-address-book" aria-hidden="true" id="iconWork"></i>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-9" id="work__content">
                   <p>100,000 online courses</p>
                   <p>Explore a variety of fresh topics</p>
                 </div>
+              </div>
+            </div>
 
+            <div class="col-md-4">
+              <div class="row mt-3">
 
+                <div class="col-md-2">
+                  <i class="fa fa-address-book" aria-hidden="true" id="iconWork"></i>
+                </div>
+
+                <div class="col-md-9" id="work__content">
+                  <p>Expert instruction</p>
+                  <p>Find the right instructor for you</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row mt-3">
+
+                <div class="col-md-2">
+                  <i class="fa fa-address-book" aria-hidden="true" id="iconWork"></i>
+                </div>
+
+                <div class="col-md-9" id="work__content">
+                  <p>Lifetime access</p>
+                  <p>Learn on your schedule</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!--Course  -->
+      <div class="course">
+        <div class="container">
+          <div class="course__line1">
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="introduce__content">
+                  <p class="title">The world’s largest selection of courses</p>
+                  <p class="title__detail">Choose from over 100,000 online video courses with new additions published every month</p>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+
+                <div class="col-md-12">
+                    <!-- Nav pills -->
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#business">Business</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#design">Design</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link" data-toggle="pill" href="#photography">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#development">Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#marketing">Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#itSoftware">IT & Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#personalDevelopment">Personal Development</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="tab-content">
+                  <div id="business" class="container tab-pane active ">
+                    <div class="slidecoursecategory">
+
+                      <div class="row slidecategory">
+
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh2.jpg">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Microsoft Excel - Excel from Beginner to Advanced</h4>
+                              <h3>Office Newb LLC</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.6</span>
+                                    <span>(143,668)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$149.99</span>
+                                <span id="pricenew">$20.99</span>
+                              </p>
+                            </div>
+        
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+        
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh26.jpg">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">User Experience Design Essentials - Adobe XD UI UX Design</h4>
+                              <h3>Daniel Walter Scott</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.6</span>
+                                    <span>(20,112)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$114.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+        
+        
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh28.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</h4>
+                              <h3>Dr. Angela Yu</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.8</span>
+                                    <span>(44,315)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$114.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh24.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                              <h3>Andrei Neagoie</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.7</span>
+                                    <span>(37,279)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$99.99</span>
+                                <span id="pricenew">$11.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh13.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h4>
+                              <h3>Jonas Schmedtmann</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.8</span>
+                                    <span>(22,749)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$94.99</span>
+                                <span id="pricenew">$10.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh15.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Java Tutorial for Complete Beginners</h4>
+                              <h3>John Purcell</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" ></i>
+                                </div>
+                                <div>
+                                    <span>4.3</span>
+                                    <span>(84,506)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="pricenew">Free</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh17.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">2020 Complete Python Bootcamp: From Zero to Hero in Python</h4>
+                              <h3>Jose Portilla</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.5</span>
+                                    <span>(294,994)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$119.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh25.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">The Complete 2020 Web Development Bootcamp</h4>
+                              <h3>Dr. Angela Yu</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.7</span>
+                                    <span>(69,036)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$119.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                      
+                    </div>
+
+                  </div>
+
+                  <div id="design" class="container tab-pane fade">
+                    <div class="slidecoursecategory">
+                      <div class="row slidecategory1">
+
+                        <div class="col-md-3">
+        
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh26.jpg">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">User Experience Design Essentials - Adobe XD UI UX Design</h4>
+                              <h3>Daniel Walter Scott</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.6</span>
+                                    <span>(20,112)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$114.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+        
+        
+                        </div>
+  
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh2.jpg">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Microsoft Excel - Excel from Beginner to Advanced</h4>
+                              <h3>Office Newb LLC</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.6</span>
+                                    <span>(143,668)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$149.99</span>
+                                <span id="pricenew">$20.99</span>
+                              </p>
+                            </div>
+        
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh28.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</h4>
+                              <h3>Dr. Angela Yu</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.8</span>
+                                    <span>(44,315)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$114.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh24.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                              <h3>Andrei Neagoie</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.7</span>
+                                    <span>(37,279)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$99.99</span>
+                                <span id="pricenew">$11.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh13.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h4>
+                              <h3>Jonas Schmedtmann</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.8</span>
+                                    <span>(22,749)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$94.99</span>
+                                <span id="pricenew">$10.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh15.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">Java Tutorial for Complete Beginners</h4>
+                              <h3>John Purcell</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" ></i>
+                                </div>
+                                <div>
+                                    <span>4.3</span>
+                                    <span>(84,506)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="pricenew">Free</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail"  src="./img/kh17.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">2020 Complete Python Bootcamp: From Zero to Hero in Python</h4>
+                              <h3>Jose Portilla</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.5</span>
+                                    <span>(294,994)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$119.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                          <div class="card__content">
+                            <img class="img-thumbnail" src="./img/kh25.jpg" alt="">
+                            <div class="card-body__content">
+                              <h4 class="card-title__content">The Complete 2020 Web Development Bootcamp</h4>
+                              <h3>Dr. Angela Yu</h3>
+              
+                              <div class="d-flex">
+                                <div class="rating">
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                    <i class="fas fa-star" style="color: #ec7532;"></i>
+                                </div>
+                                <div>
+                                    <span>4.7</span>
+                                    <span>(69,036)</span>
+                                </div>
+                            </div>
+              
+                              <p class="card-text__content">
+                                <span id="priceold">$119.99</span>
+                                <span id="pricenew">$13.99</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="course__line2">
+            <div class="title">
+              <p>Students are viewing</p>
+            </div>
+            <div class="slide__course">
+
+              <div class="row slides">
+
+                <div class="col-md-2">
+
+                  <div class="card__content">
+                    <img class="img-thumbnail" src="./img/kh2.jpg">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">Microsoft Excel - Excel from Beginner to Advanced</h4>
+                      <h3>Office Newb LLC</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.6</span>
+                            <span>(143,668)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$149.99</span>
+                        <span id="pricenew">$20.99</span>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+
+                  <div class="card__content">
+                    <img class="img-thumbnail" src="./img/kh26.jpg">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">User Experience Design Essentials - Adobe XD UI UX Design</h4>
+                      <h3>Daniel Walter Scott</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.6</span>
+                            <span>(20,112)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$114.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh28.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</h4>
+                      <h3>Dr. Angela Yu</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.8</span>
+                            <span>(44,315)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$114.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh24.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">The Complete Web Developer in 2020: Zero to Mastery</h4>
+                      <h3>Andrei Neagoie</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.7</span>
+                            <span>(37,279)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$99.99</span>
+                        <span id="pricenew">$11.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh13.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h4>
+                      <h3>Jonas Schmedtmann</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.8</span>
+                            <span>(22,749)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$94.99</span>
+                        <span id="pricenew">$10.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh15.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">Java Tutorial for Complete Beginners</h4>
+                      <h3>John Purcell</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" ></i>
+                        </div>
+                        <div>
+                            <span>4.3</span>
+                            <span>(84,506)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="pricenew">Free</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh17.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">2020 Complete Python Bootcamp: From Zero to Hero in Python</h4>
+                      <h3>Jose Portilla</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.5</span>
+                            <span>(294,994)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$119.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail" src="./img/kh25.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">The Complete 2020 Web Development Bootcamp</h4>
+                      <h3>Dr. Angela Yu</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.7</span>
+                            <span>(69,036)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$119.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh18.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">The Web Developer Bootcamp</h4>
+                      <h3>Colt Steele</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.6</span>
+                            <span>(174,402)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$114.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh16.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">Automate the Boring Stuff with Python Programming</h4>
+                      <h3>Al Sweigart</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.6</span>
+                            <span>(60,809)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$49.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh21.jpg" alt="">
+                    <div class="card-body__content"__content>
+                      <h4 class="card-title__content">Machine Learning A-Z™: Hands-On Python & R In Data Science</h4>
+                      <h3>Kirill Eremenko</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.5</span>
+                            <span>(125,312)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$94.99</span>
+                        <span id="pricenew">$10.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="card__content">
+                    <img class="img-thumbnail"  src="./img/kh20.jpg" alt="">
+                    <div class="card-body__content">
+                      <h4 class="card-title__content">The Complete Digital Marketing Course - 12 Courses in 1</h4>
+                      <h3>Rob Percival</h3>
+      
+                      <div class="d-flex">
+                        <div class="rating">
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                            <i class="fas fa-star" style="color: #ec7532;"></i>
+                        </div>
+                        <div>
+                            <span>4.4</span>
+                            <span>(106,056)</span>
+                        </div>
+                    </div>
+      
+                      <p class="card-text__content">
+                        <span id="priceold">$119.99</span>
+                        <span id="pricenew">$13.99</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+  
+          </div>
+
+        </div>
+
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--slick.js  -->
+    <script src="./lib/slick/slick.min.js"></script>
+
+    <!--course__line1  -->
+    <script>
+      $(document).ready(function(){
+        $('.slidecategory').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+
+          responsive: [
+              {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+              },
+              {
+              breakpoint: 600,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+              },
+              {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+          ]
+
+        });
+      });
+    </script>
+    <!--course__line2  -->
+    <script>
+      $(document).ready(function(){
+        $('.slides').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 6,
+          slidesToScroll: 6,
+
+          responsive: [
+              {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+              },
+              {
+              breakpoint: 600,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+              },
+              {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+          ]
+
+      });
+    });
+    </script>
   </body>
 </html>
 
